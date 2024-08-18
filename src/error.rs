@@ -24,3 +24,5 @@ impl Display for Error {
         f.write_str(&msg)
     }
 }
+
+impl std::error::Error for Error {}
